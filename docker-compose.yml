@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env/database
+      - .env/web
+  
+  database:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    env_file:
+      - .env/database
+
+volumes:
+  db_data:
+    
