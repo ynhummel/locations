@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trading_name: MyString
+  owner_name: MyString
+  document: MyString
+  coverage_area: 
+  address: 
+
+two:
+  trading_name: MyString
+  owner_name: MyString
+  document: MyString
+  coverage_area: 
+  address: 
