@@ -15,10 +15,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_20_222928) do
   enable_extension "plpgsql"
 
   create_table "partners", force: :cascade do |t|
-    t.string "tradingName"
-    t.string "ownerName"
+    t.string "trading_name"
+    t.string "owner_name"
     t.string "document"
-    t.json "coverageArea"
+    t.json "coverage_area"
     t.json "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

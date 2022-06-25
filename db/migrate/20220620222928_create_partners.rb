@@ -1,10 +1,10 @@
 class CreatePartners < ActiveRecord::Migration[7.0]
   def change
     create_table :partners do |t|
-      t.string :tradingName
-      t.string :ownerName
+      t.string :trading_name
+      t.string :owner_name
       t.string :document
-      t.json :coverageArea
+      t.json :coverage_area
       t.json :address
 
       t.timestamps
