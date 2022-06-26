@@ -3,6 +3,10 @@ class Api::V1::PartnersController < Api::V1::ApiController
     render json: "The partners API is up and running!", status: 200
   end
 
+  def search
+    render json: { longitude: params[:long], latitude: params[:lat]}, status: 200
+  end
+
   def show
     partner = Partner.find(params[:id])
     render json: partner, status: 200
